@@ -12,8 +12,8 @@ import numpy as np
 
 filespath='../data/user-domains-extracted'
 # Load our seed set of pay-level domains sourced from Media Bias Fact Check
-scidf=pd.read_csv('../data/pro-science.csv')
-antiscidf=pd.read_csv('../data/conspiracy-pseudoscience.csv')
+scidf=pd.read_csv('../data/PLD-pro-science.csv')
+antiscidf=pd.read_csv('../data/PLD-conspiracy-pseudoscience.csv')
 
 #We have 150 pro-science PLDs and 450 anti-science PLDs
 
@@ -117,8 +117,8 @@ for user in tqdm(user_polarity_list):
 ## POLITICAL - DOMAIN SCORE CALCULATION
 
 
-leftdf=pd.read_csv('../data/left.csv') #1
-rightdf=pd.read_csv('../data/right.csv')#-1
+leftdf=pd.read_csv('../data/PLD-left.csv') #1
+rightdf=pd.read_csv('../data/PLD-right.csv')#-1
 
 
 for i in tqdm(range(len(leftdf['domain']))):
@@ -211,8 +211,8 @@ for user in tqdm(user_polarity_list_lr):
 
 ## MODERACY - DOMAIN SCORE CALCULATION
 
-intensedf = pd.read_csv('../data/intense.csv') #-1
-centerdf = pd.read_csv('../data/moderate.csv')#1
+intensedf = pd.read_csv('../data/PLD-hardline.csv') #-1
+centerdf = pd.read_csv('../data/PLD-moderate.csv')#1
 
 for i in tqdm(range(len(intensedf['domain']))):
     uri = tldextract.extract(intensedf['domain'].iloc[i])
