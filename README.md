@@ -51,6 +51,10 @@ Create a .csv file consisting of edges of a retweet network extracted from rehyd
 python LPA-Analysis.py <path_to_.csv containing edges from retweet network>
 ```
 
+### Annotated Pay-Level Domain Data
+
+The data folder consists of seeds (Twitter handles) for Label Propagation analysis and ideology annotated Pay-Level Domains (URLs) for domain score computation, Latent Dirichlet Allocation and our SOTA embedding model.
+
 
 ## Citation
 
