@@ -7,6 +7,8 @@ The COVID-19 pandemic has laid bare our differences and exposed crevices in nati
 
 ## Usage
 
+### FastText Model
+
 Tweet-ids corresponding to COVID-19 tweets collected from January 21, 2020 to July 31, 2020 have been sourced from [COVID-19-TweetIDs](https://github.com/echen102/COVID-19-TweetIDs). Owing to Twitter's policy we are restricted to sharing tweet-ids and users can rehydrate this dataset using [hydrator](https://github.com/DocNow/hydrator). Upon rehydrating the content we can start pre-processing our tweets to compute ground truth domain scores. Ensure that the folder structure of rehydrated tweets match the folder structure of tweet-ids. 
 
 Refer to [twitter-locations-us-state](https://github.com/julie-jiang/twitter-locations-us-state) to perform filtering of rehydrated tweets by their location. 
@@ -31,6 +33,14 @@ You are then ready to execute the prediction model as follows and the final pred
 
 ```
 python FastText-Pred.py
+```
+
+### LDA Model
+
+Prepare a dataset consisting of users and the hashtags they generate over time and use the following command to conduct LDA analysis.
+
+```
+python LDA-Analysis.py
 ```
 
 ## Citation
