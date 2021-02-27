@@ -19,6 +19,7 @@ from gensim.models.coherencemodel import CoherenceModel
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score,confusion_matrix
+import sys
 
 def lit_eval(x):
     if x!='':
@@ -60,7 +61,7 @@ def check_lang(text):
 hashtag_counts = 0
 users_hashtags={}
 day_wise={}
-filespath = '/data/Coronavirus-Tweets/daily-hashtags'
+filespath = sys.args[1]
 files = os.listdir(filespath)
 for file in tqdm(files):
     day = file.split('.')[0]
