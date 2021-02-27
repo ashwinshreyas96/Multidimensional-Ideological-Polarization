@@ -43,6 +43,15 @@ Prepare a dataset consisting of users and the hashtags they generate over time a
 python LDA-Analysis.py <path_to_.csv containing user-hashtag data>
 ```
 
+### LPA Model
+
+Create a .csv file consisting of edges of a retweet network extracted from rehydrated data and run LPA analysis as shown below. Ensure column names are in sync with the code. 
+
+```
+python LPA-Analysis.py <path_to_.csv containing edges from retweet network>
+```
+
+
 ## Citation
 
 If yopu find this code useful please cite [Political Partisanship and Anti-Science Attitudes in Online Discussions about COVID-19](https://arxiv.org/abs/2011.08498) as follows:
