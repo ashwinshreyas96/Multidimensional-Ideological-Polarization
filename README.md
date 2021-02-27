@@ -40,7 +40,7 @@ python FastText-Pred.py
 Prepare a dataset consisting of users and the hashtags they generate over time and use the following command to conduct LDA analysis.
 
 ```
-python LDA-Analysis.py
+python LDA-Analysis.py <path_to_.csv containing user-hashtag data>
 ```
 
 ## Citation
